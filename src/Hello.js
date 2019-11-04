@@ -1,4 +1,5 @@
 import React from 'react';
+import { DatePicker } from 'antd';
 class Hello extends React.Component{
   constructor(props){
     super(props);
@@ -6,7 +7,10 @@ class Hello extends React.Component{
   }
   render(){
     return(
-      <div>Hello {this.props.name} !</div>
+      <div>
+        Hello {this.props.name} !
+        <DatePicker></DatePicker>
+      </div>
     )
   }
 }
