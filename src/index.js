@@ -17,8 +17,23 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'antd/dist/antd.css';
 
-//正式项目
-//ReactDOM.render(<HashRouter><AppRouter/></HashRouter>, document.getElementById('root'));
+//路由接收参数 通过?传递参数
+//ReactDOM.render(<BrowserRouter><RouterParam2></RouterParam2></BrowserRouter>, document.getElementById('root'));
+
+
+// ========================  redux 例子 =============================//
+
+// 纯redux测试 - 该内容是立即执行的,查看console
+import './views/redux/basic/storeTest'
+
+// 基础例子
+//import '@/views/redux/basic/index'
+
+
+// ========================  dva 例子 =============================//
+
+//基础结构
+// import '@/views/dva/basic/index.js'
 
 // ========================  路由教程 =============================//
 /**
@@ -48,23 +63,8 @@ import 'antd/dist/antd.css';
 //路由接收参数 - restful
 //ReactDOM.render(<BrowserRouter><RouterParam></RouterParam></BrowserRouter>, document.getElementById('root'));
 
-//路由接收参数 通过?传递参数
-//ReactDOM.render(<BrowserRouter><RouterParam2></RouterParam2></BrowserRouter>, document.getElementById('root'));
-
-
-// ========================  redux 例子 =============================//
-
-// 纯redux测试 - 该内容是立即执行的,查看console
-//import './views/redux/basic/storeTest'
-
-// 基础例子
-//import '@/views/redux/basic/index'
-
-
-// ========================  dva 例子 =============================//
-
-//基础结构
-import '@/views/dva/basic/index.js'
+//正式项目
+// ReactDOM.render(<HashRouter><AppRouter/></HashRouter>, document.getElementById('root'));
 
 
 serviceWorker.unregister();
