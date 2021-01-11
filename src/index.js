@@ -24,7 +24,7 @@ import 'antd/dist/antd.css';
 // ========================  redux 例子 =============================//
 
 // 纯redux测试 - 该内容是立即执行的,查看console
-import './views/redux/basic/storeTest'
+// import './views/redux/basic/storeTest'
 
 // 基础例子
 //import '@/views/redux/basic/index'
@@ -64,7 +64,7 @@ import './views/redux/basic/storeTest'
 //ReactDOM.render(<BrowserRouter><RouterParam></RouterParam></BrowserRouter>, document.getElementById('root'));
 
 //正式项目
-// ReactDOM.render(<HashRouter><AppRouter/></HashRouter>, document.getElementById('root'));
+ ReactDOM.render(<BrowserRouter><AppRouter/></BrowserRouter>, document.getElementById('root'));
 
 
 serviceWorker.unregister();

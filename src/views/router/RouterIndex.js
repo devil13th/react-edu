@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import { Home, About, Users } from '../../components/normal'
+import ParentComponent from '../basic/children/Parent'
 import Thd from '@/components/thd/Thd'
 export default function RouterTest() {
 
@@ -32,6 +33,9 @@ export default function RouterTest() {
           <Route path='/router/home' component={Home} />
           <Route path='/router/about' component={About} />
           <Route path='/router/users' component={Users} />
+
+          <Route path='/router/basic/children/parent' component={ParentComponent} />
+          
           {/* 默认页 */}
           <Redirect form="/router" to="/router/home" />
         </Switch>
